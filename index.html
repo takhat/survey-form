@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for sharing your feedback!</p>
+<form id="survey-form" action="https://survey-form.freecodecamp.rocks" method="post">
+<fieldset>
+<label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Enter your name here" required> </input></label>
+<label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter your email here" required> </input></label>
+<label id="number-label" for="number">Age (optional) <input id="number" name="number" type="number" min=13 max=120 placeholder=13></input></label>
+<label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+</fieldset>
+
+
+      <fieldset>
+        <legend>What is your preferred learning style?</legend>
+        <label for="inperson"><input id="inperson" class="inline" type="radio" name="pref" value=1
+        checked /> In Person</label>
+        <label for="online"><input id="online" class="inline" type="radio" name="pref" value=2/> Online</label>
+        <label for="hybrid"><input id="hybrid"  class="inline" type="radio" name="pref" value=3/> Hybrid</label>
+        
+      </fieldset>
+<fieldset>
+  <legend>What areas of the program can be improved? (Check all that apply)</legend>
+  <label for="lectures">
+        <input class="inline" id="lectures" type="checkbox"  name="lectures" value=1 /> Lectures
+      </label>
+  <label for="assignments">
+        <input class="inline" id="assignments" type="checkbox"  name="assignments" value=2/> Assignments
+      </label>
+  <label for="practice">
+        <input class="inline" id="practice" type="checkbox" value=3  name="practice" /> Practice Problems
+      </label>
+        <label for="capstone">
+        <input class="inline" id="capstone" type="checkbox" value=4 name="capstone" /> Capstone Project
+      </label>
+</fieldset>
+<fieldset>
+<label for="comments">Any comments or suggestions? <textarea id="comments" name="comments" rows=3 cols=30 placeholder="Enter comments here.."></textarea></label></fieldset>
+<input type="submit" id="submit" name="submit" value="Submit" />
+</form>
+  </body>
+  </html>
